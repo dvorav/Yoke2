@@ -1,0 +1,28 @@
+{
+  "name": "yoke2",
+  "version": "1.0.0",
+  "description": "Chatroom Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvorav/Yoke2.git"
+  },
+  "keywords": [
+    "Project2"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvorav/Yoke2/issues"
+  },
+  "homepage": "https://github.com/dvorav/Yoke2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "handlebars": "^4.7.6"
+  }
+}
