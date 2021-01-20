@@ -38,10 +38,10 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-require("./controllers/index")(app);
+//require("./controllers/index")(app);
 // Import routes and give the server access to them.
-//let routes = require("./controllers/index.js");
-//app.use(routes);
+let routes = require("./controllers/index.js");
+app.use(routes);
 
 //When we emit messages to the user they'll come from Admin - this sets that variable
 const admin = "admin";
