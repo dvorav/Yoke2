@@ -11,9 +11,8 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-app.use(require("./models"));
 // Requiring our models for syncing
-//const db = require("./models");
+const db = require("./models");
 
 //Require functions for socket.io
 const formatMessage = require("./public/assets/js/messages.js");
@@ -38,7 +37,6 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-//require("./controllers/index")(app);
 // Import routes and give the server access to them.
 let routes = require("./controllers/index.js");
 app.use(routes);
