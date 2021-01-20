@@ -11,6 +11,9 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
+// Requiring our models for syncing
+const db = require("../Yoke2/models");
+
 //Require functions for socket.io
 const formatMessage = require("./public/assets/js/messages.js");
 const { userJoin, getCurrentUser, userLeaves, getRoomUsers } = require("./public/assets/js/users.js");
@@ -76,7 +79,10 @@ io.on('connection', socket => {
     });
 });
 
-
-server.listen(PORT, function() {
-    console.log("Server listening on: http://localhost:" + PORT);
+// Syncing our sequelize models and then starting our Express app
+// =============================================================
+db.sequelize.sync().then(function() {
+    server.listen(PORT, function() {
+        console.log("Server listening on: http://localhost:" + PORT);
+    });
 });
