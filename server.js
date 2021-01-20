@@ -12,7 +12,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 // Requiring our models for syncing
-const db = require("../Yoke2/models");
+const db = require("./models");
 
 //Require functions for socket.io
 const formatMessage = require("./public/assets/js/messages.js");
