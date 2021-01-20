@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": null,
+    "password": "flower",
     "database": "sequelize_chat",
     "host": "127.0.0.1",
     "dialect": "mysql"
