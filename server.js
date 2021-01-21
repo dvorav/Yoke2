@@ -11,9 +11,6 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
-// Requiring our models for syncing
-const db = require("./models");
-
 //Require functions for socket.io
 const formatMessage = require("./public/assets/js/messages.js");
 const {
@@ -25,6 +22,10 @@ const {
 
 //Serve static content for app from public directory
 app.use(express.static(path.join(__dirname, "public")));
+
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 //Set up handlebars
 app.engine(
@@ -94,10 +95,8 @@ io.on("connection", (socket) => {
   });
 });
 
-// Syncing our sequelize models and then starting our Express app
+// Starts the server to begin listening
 // =============================================================
-db.sequelize.sync().then(function () {
-  server.listen(PORT, function () {
-    console.log("Server listening on: http://localhost:" + PORT);
-  });
+server.listen(PORT, function () {
+  console.log("Server listening on: http://localhost:" + PORT);
 });
