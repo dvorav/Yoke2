@@ -1,5 +1,6 @@
 let express = require("express");
 let router = express.Router();
+let Chat = require("../models/chat.js");
 
 //Renders main page
 router.get("/", function (req, res, next) {
