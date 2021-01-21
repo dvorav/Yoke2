@@ -3,7 +3,7 @@ let router = express.Router();
 
 //Renders main page
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Yoke!", condition: false });
+  res.render("index", { title: "Yoke!", layout: "main", condition: false });
 });
 
 //Renders chatroom page
