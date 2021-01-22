@@ -1,37 +1,26 @@
- <div class="chat-container">
-      <header class="chat-header">
-        <h1>Y<i class="fas fa-egg"></i>KE</h1>
-        <form action="/">
-        <button>Leave Room</button></form>
-        
-      </header>
-      <main class="chat-main">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <h2>Users Info</h2>
-            <hr>
-            <div id="users-info"></div>
-          </div>
-        </div>
-        <div class="chat-sidebar">
-          <h3><i class="fas fa-comments"></i> Room Name:</h3>
-          <h2 id="room-name"></h2>
-          <h3><i class="fas fa-users"></i> Users</h3>
-          <ul id="users"></ul>
-        </div>
-        <div class="chat-messages"></div>
-      </main>
-      <div class="chat-form-container">
-        <form id="chat-form">
-          <input
-            id="msg"
-            type="text"
-            placeholder="Enter Message"
-            required
-            autocomplete="off"
-          />
-          <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
-        </form>
+<div class="chat-container">
+  <header class="chat-header">
+    <h1>Y<i class="fas fa-egg"></i>KE</h1>
+    <form action="/">
+      <button class="btnTwo">Leave Room</button>
+    </form>
+
+  </header>
+  <main class="chat-main">
+    <div class="row">
+      <div class="chat-sidebar">
+        <h3><i class="fas fa-comments"></i> Room Name:</h3>
+        <h2 id="room-name"></h2>
+        <h3><i class="fas fa-users"></i> Users</h3>
+        <ul id="users"></ul>
       </div>
     </div>
-
+    <div class="chat-messages"></div>
+  </main>
+  <div class="chat-form-container">
+    <form id="chat-form">
+      <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
+      <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+    </form>
+  </div>
+</div>
