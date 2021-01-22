@@ -5,6 +5,7 @@ const exphbs = require("express-handlebars");
 const path = require("path");
 const http = require("http");
 const socketio = require("socket.io");
+const db = require("./models");
 
 //Set up Express server with socket.io
 const app = express();
@@ -41,6 +42,7 @@ app.set("view engine", "handlebars");
 // Import routes and give the server access to them.
 let routes = require("./controllers/index.js");
 app.use(routes);
+require("../Yoke2/routes/api-routes.js")(app);
 
 //When we emit messages to the user they'll come from Admin - this sets that variable
 const admin = "admin";
@@ -95,8 +97,10 @@ io.on("connection", (socket) => {
   });
 });
 
-// Starts the server to begin listening
+// Syncing our sequelize models and then starting our Express app
 // =============================================================
-server.listen(PORT, function () {
-  console.log("Server listening on: http://localhost:" + PORT);
+db.sequelize.sync().then(function() {
+  server.listen(PORT, function () {
+    console.log("Server listening on: http://localhost:" + PORT);
+  });
 });
