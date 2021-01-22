@@ -13,8 +13,8 @@ let sequelize = new Sequelize("sequelize_chat", "root", "flower", {
   pool: {
     max: 5,
     min: 0,
-    idle: 10000
-  }
+    idle: 10000,
+  },
 });
 
 // Exports the connection for other files to use
