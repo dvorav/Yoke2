@@ -42,7 +42,6 @@ app.set("view engine", "handlebars");
 // Import routes and give the server access to them.
 let routes = require("./controllers/index.js");
 app.use(routes);
-require("../Yoke2/routes/api-routes.js")(app);
 
 //When we emit messages to the user they'll come from Admin - this sets that variable
 const admin = "admin";
@@ -98,7 +97,7 @@ io.on("connection", (socket) => {
 });
 
 // Syncing our sequelize models and then starting our Express app
-// =============================================================
+// ===============================================================
 db.sequelize.sync().then(function() {
   server.listen(PORT, function () {
     console.log("Server listening on: http://localhost:" + PORT);
