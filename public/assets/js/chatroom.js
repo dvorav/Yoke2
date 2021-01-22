@@ -44,6 +44,7 @@ $(document).ready(function() {
                 row.append("<p>" + data[i].topic + "</p>");
 
                 $("#users-info").prepend(row);
+                $("#room").append('<option value="' + data[i].topic + '">' + data[i].topic + '</option>');
             };
         };
     });
