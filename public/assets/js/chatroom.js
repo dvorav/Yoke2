@@ -23,13 +23,8 @@ $(document).ready(function() {
         $.post("/api/new", newUser)
         // On success, run the following code
         .then(function () {
-            let row = $("<div>");
-            row.addClass("users-info");
-
-            row.append("<p>" + newUser.username + "</p>");
-            row.append("<p>" + newUser.topic + "</p>");
-
-            $("#users-info").prepend(row);
+            $("#room-name").text(newUser.topic);
+            $("#users").text(newUser.username);
         });
     });
 
@@ -37,13 +32,10 @@ $(document).ready(function() {
     $.get("/api/all", function (data) {
         if (data.length !== 0) {
             for (var i = 0; i < data.length; i++) {
-                let row = $("<div>");
-                row.addClass("users-info");
 
-                row.append("<p>" + data[i].username + "</p>");
-                row.append("<p>" + data[i].topic + "</p>");
-
-                $("#users-info").prepend(row);
+                $("#room-name").text(data[i].topic);
+                $("#users").text(data[i].username);
+                
                 $("#room").append('<option value="' + data[i].topic + '">' + data[i].topic + '</option>');
             };
         };
