@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-:root {
-    --dark-color-a: #7d470e;
-    --dark-color-b: hsl(36, 75%, 48%);
-    --light-color: #f9e2b9;
-    --success-color: #5cb85c;
-    --error-color: #d9534f;
-}
+
 
 * {
     box-sizing: border-box;
@@ -15,9 +9,9 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
-    background: rgb(245, 217, 169);
+    background: rgb(169, 146, 119);
     margin: 20px;
 }
 
@@ -31,11 +25,14 @@ a {
 
 .btn {
     cursor: pointer;
-    padding: 5px 15px;
-    background: rgb(245, 217, 169);
-    color: rgb(61, 38, 10);
-    border: 0;
+    padding: 10px 20px;
+    background: rgb(67, 47, 21);
+    color: rgb(201, 189, 173);
+    border: 3;
     font-size: 17px;
+    border-color: #7d470e;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: bolder;
 }
 
 /* Chat Page */
@@ -45,10 +42,11 @@ a {
     background: rgb(241, 237, 237);
     margin: 30px auto;
     overflow: hidden;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .chat-header {
-    background: rgb(109, 63, 15);
+    background: rgb(67, 47, 21);
     color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -59,24 +57,25 @@ a {
 }
 
 .btnTwo {
-    background-color: rgb(240, 203, 158);
-    color: rgb(87, 47, 17);
+    background-color: rgb(179, 159, 123);
+    color: rgb(67, 47, 21);
 }
 
 .chat-main {
     display: grid;
     grid-template-columns: 1fr 3fr;
+
 }
 
 .chat-sidebar {
-    background: rgb(167, 110, 48);
+    background: rgb(184, 152, 107);
     color: rgb(0, 0, 0);
     padding: 20px 20px 60px;
     overflow-y: scroll;
 }
 
 .chat-sidebar h2 {
-    font-size: 20px;
+    font-size: 16px;
     background: rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin-bottom: 20px;
@@ -99,26 +98,27 @@ a {
 .chat-messages .message {
     padding: 10px;
     margin-bottom: 15px;
-    background-color: burlywood;
+    background-color: rgb(179, 159, 123);
     border-radius: 5px;
     overflow-wrap: break-word;
 }
 
 .chat-messages .message .meta {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
-    color: rgb(102, 60, 15);
+    color: rgb(0, 0, 0);
     opacity: 0.7;
     margin-bottom: 7px;
 }
 
 .chat-messages .message .meta span {
-    color: #777;
+    color: rgb(0, 0, 0);
+
 }
 
 .chat-form-container {
-    padding: 20px 30px;
-    background-color: rgb(117, 74, 21);
+    padding: 30px 40px;
+    background-color: rgb(67, 47, 21);
 }
 
 .chat-form-container form {
@@ -132,7 +132,9 @@ a {
     flex: 1;
 }
 
+
 /* Join Page */
+
 .join-container {
     max-width: 500px;
     margin: 80px auto;
@@ -142,14 +144,15 @@ a {
 .join-header {
     text-align: center;
     padding: 20px;
-    background-color: rgb(106, 67, 15);
+    background-color: rgb(67, 47, 21);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
 .join-main {
     padding: 30px 40px;
-    background-color: rgb(164, 115, 29);
+    background-color: rgb(184, 152, 107);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .join-main .form-control {
@@ -158,32 +161,36 @@ a {
 
 .join-main label {
     color: rgb(1, 10, 10);
-    display: inline-block;
+    display: block;
+    font-size: 18px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-.join-main input[type='text'] {
+.join-main input[type="text"] {
     color: black;
     font-size: 16px;
     padding: 5px;
     height: 40px;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-
 .join-main input[type="button"] {
-    background-color: rgb(240, 198, 148);
+    background-color: rgb(67, 47, 21);
+    color: rgb(201, 189, 173);
     margin-top: 10px;
     width: 50%;
-    position: flex;
+    margin-left: 110px;
 }
 
 .join-main select {
     color: black;
     font-size: 16px;
-    padding: 5px;
-    height: 40px;
+    padding: 4px;
+    height: 30px;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .join-main .btn {
