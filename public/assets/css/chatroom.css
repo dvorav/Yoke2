@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,7 +26,7 @@ a {
     cursor: pointer;
     padding: 10px 20px;
     background: rgb(67, 47, 21);
-    color: rgb(201, 189, 173);
+    color: rgb(250, 248, 246);
     border: 3;
     font-size: 17px;
     border-color: #000000;
@@ -39,15 +38,15 @@ a {
 
 .chat-container {
     max-width: 1100px;
-    background: rgb(241, 237, 237);
+    background: rgb(223, 220, 220);
     margin: 30px auto;
     overflow: hidden;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb(5, 5, 5) 0px 20px 30px -10px;
 }
 
 .chat-header {
     background: rgb(67, 47, 21);
-    color: #fff;
+    color: rgb(223, 220, 220);
     padding: 15px;
     display: flex;
     align-items: center;
@@ -56,7 +55,7 @@ a {
 
 .btnTwo {
     background-color: rgb(179, 159, 123);
-    color: rgb(67, 47, 21);
+    color: rgb(0, 0, 0);
 }
 
 .chat-main {
@@ -70,6 +69,7 @@ a {
     color: rgb(0, 0, 0);
     padding: 20px 20px 60px;
     overflow-y: scroll;
+    padding-bottom: 300px;
 }
 
 .chat-sidebar h2 {
@@ -103,15 +103,19 @@ a {
 }
 
 .chat-messages .message .meta {
-    font-size: 16px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(3, 3, 3);
     opacity: 0.7;
     margin-bottom: 7px;
+    text-decoration: underline;
 }
 
 .chat-messages .message .meta span {
     color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: underline;
 
 }
 
@@ -126,9 +130,18 @@ a {
 
 .chat-form-container input[type='text'] {
     font-size: 16px;
+    background-color: rgb(223, 220, 220);
     padding: 5px;
     height: 40px;
     flex: 1;
+}
+
+.chat-form-container .btn {
+    background: rgb(184, 152, 107);
+    color: rgb(8, 8, 8);
+    margin-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 
@@ -137,7 +150,7 @@ a {
 .join-container {
     max-width: 500px;
     margin: 80px auto;
-    color: rgb(248, 246, 246);
+    color: rgb(223, 220, 220);
 }
 
 .join-header {
@@ -151,7 +164,7 @@ a {
 .join-main {
     padding: 30px 40px;
     background-color: rgb(184, 152, 107);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb(8, 8, 8) 0px 20px 30px -10px;
 }
 
 .join-main .form-control {
@@ -172,12 +185,12 @@ a {
     padding: 5px;
     height: 40px;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .join-main input[type="button"] {
     background-color: rgb(67, 47, 21);
-    color: rgb(201, 189, 173);
+    color: rgb(247, 245, 242);
     margin-top: 10px;
     width: 50%;
     margin-left: 110px;
@@ -185,17 +198,22 @@ a {
 
 .join-main select {
     color: black;
+    border: black;
+    border-color: rgb(0, 0, 0);
     font-size: 16px;
     padding: 4px;
     height: 30px;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .join-main .btn {
     margin-top: 30px;
     width: 100%;
+    background: rgb(67, 47, 21);
+    color: rgb(250, 248, 246);
 }
+
 
 @media (max-width: 700px) {
     .chat-main {
