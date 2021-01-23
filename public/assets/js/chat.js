@@ -13,7 +13,7 @@ const socket = io();
 socket.emit('joinRoom', { username, room });
 
 //Get users
-socket.on('roomUsers', ({ users }) => {
+socket.on('roomUsers', ({ users, room }) => {
 
     let url = window.location.search;
     let chatId;
@@ -22,6 +22,7 @@ socket.on('roomUsers', ({ users }) => {
         getUser(chatId);
     } 
     outputUsers(users, chatId);
+    outputRoomName(room);
 });
 
 //Message from Server
@@ -60,6 +61,12 @@ function outputMessage(message) {
     <p class="text">${message.text}</p>`;
     //Query Select class .chat-messages and append div
     document.querySelector('.chat-messages').appendChild(div);
+};
+
+//Add roomname to DOM
+function outputRoomName(room) {
+    roomName.innerText = room;
+
 };
 
 //Add Users to DOM
