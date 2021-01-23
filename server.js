@@ -42,7 +42,8 @@ app.set("view engine", "handlebars");
 // Import routes and give the server access to them.
 let routes = require("./controllers/index.js");
 app.use(routes);
-require("./controllers/api-routes.js")(app);
+require("./controllers/chat-api-routes.js")(app);
+require("./controllers/user-api-routes.js")(app);
 
 //When we emit messages to the user they'll come from Admin - this sets that variable
 const admin = "admin";
