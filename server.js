@@ -46,7 +46,7 @@ require("./controllers/chat-api-routes.js")(app);
 require("./controllers/user-api-routes.js")(app);
 
 //When we emit messages to the user they'll come from Admin - this sets that variable
-const admin = "admin";
+const admin = "";
 
 //Run socket when client connects - communicates with CHAT.JS FILE
 io.on("connection", (socket) => {
