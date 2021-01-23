@@ -10,7 +10,7 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    background: rgb(169, 146, 119);
+    background: rgb(95, 104, 80);
     margin: 20px;
 }
 
@@ -25,7 +25,7 @@ a {
 .btn {
     cursor: pointer;
     padding: 10px 20px;
-    background: rgb(67, 47, 21);
+    background: rgb(51, 67, 38);
     color: rgb(250, 248, 246);
     border: 3;
     font-size: 17px;
@@ -45,7 +45,7 @@ a {
 }
 
 .chat-header {
-    background: rgb(67, 47, 21);
+    background: rgb(51, 67, 38);
     color: rgb(223, 220, 220);
     padding: 15px;
     display: flex;
@@ -54,7 +54,7 @@ a {
 }
 
 .btnTwo {
-    background-color: rgb(179, 159, 123);
+    background-color: rgb(124, 144, 73);
     color: rgb(0, 0, 0);
 }
 
@@ -65,7 +65,7 @@ a {
 }
 
 .chat-sidebar {
-    background: rgb(184, 152, 107);
+    background: rgb(124, 144, 73);
     color: rgb(0, 0, 0);
     padding: 20px 20px 60px;
     overflow-y: scroll;
@@ -96,7 +96,7 @@ a {
 .chat-messages .message {
     padding: 10px;
     margin-bottom: 15px;
-    background-color: rgb(179, 159, 123);
+    background-color: rgb(110, 121, 92);
     border-radius: 5px;
     overflow-wrap: break-word;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -121,7 +121,7 @@ a {
 
 .chat-form-container {
     padding: 30px 40px;
-    background-color: rgb(67, 47, 21);
+    background-color: rgb(51, 67, 38);
 }
 
 .chat-form-container form {
@@ -137,7 +137,7 @@ a {
 }
 
 .chat-form-container .btn {
-    background: rgb(184, 152, 107);
+    background: rgb(124, 144, 73);
     color: rgb(8, 8, 8);
     margin-left: 10px;
     padding-top: 3px;
@@ -156,14 +156,14 @@ a {
 .join-header {
     text-align: center;
     padding: 20px;
-    background-color: rgb(67, 47, 21);
+    background-color: rgb(51, 67, 38);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
 .join-main {
     padding: 30px 40px;
-    background-color: rgb(184, 152, 107);
+    background-color: rgb(124, 144, 73);
     box-shadow: rgb(8, 8, 8) 0px 20px 30px -10px;
 }
 
@@ -189,11 +189,11 @@ a {
 }
 
 .join-main input[type="button"] {
-    background-color: rgb(67, 47, 21);
+    background-color: rgb(51, 67, 38);
     color: rgb(247, 245, 242);
     margin-top: 10px;
     width: 50%;
-    margin-left: 110px;
+    margin-left: 105px;
 }
 
 .join-main select {
@@ -210,7 +210,8 @@ a {
 .join-main .btn {
     margin-top: 30px;
     width: 100%;
-    background: rgb(67, 47, 21);
+    background: rgb(51, 67, 38);
+    ;
     color: rgb(250, 248, 246);
 }
 
