@@ -6,17 +6,16 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Questions](#questions)
 
 ## Description
 
-Yoke is an online messaging tool, fill in the rest with blah blah blah, etc
+Yoke is an online messaging tool, that allows users to join/add a chatroom and have realtime conversations with other users online. Core technology includes Moment.js, Socket.io, Bootstrap, Express, Sequelize-MySQL, Heroku/JawsDB & Handlebars.
 
 Screenshot of the completed output:
 
-![Yoke2 Screenshot placeholder](./src/yoke2.png)
+![Yoke2 Screenshot](./src/yoke2.png)
 
-My portfolio has been updated to include this project, and can be viewed at https://kvadou.github.io/Portfolio/portfolio.html
+![Yoke3 Screenshot](./src/yoke3.png)
 
 ## Installation
 
